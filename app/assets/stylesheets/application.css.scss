@@ -1,0 +1,282 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "Whitin";
+	src: url("Whitin.otf") format("opentype");
+}	
+
+body {
+	font-family: "Libre Baskerville", serif;
+	font-size: 16px;
+	background-image: url(images/brother_typewriter.jpg);
+	background-color: black;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+	color: white;
+	font-family: "Whitin";
+	font-size: 45px;
+	float: left;
+	padding-bottom: 15px;
+	padding-left: 100px;
+}
+
+#header-container {
+	background-color: black;
+	height: 75px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#header {
+	background-color: black;
+	margin: 0 auto;
+    width: 1000px;
+}
+
+#nav {
+	clear: right;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 15px;
+	text-align: center;
+}
+
+#nav a {
+	color: white;
+	cursor: pointer;
+	padding-right: 7px;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	text-shadow: 0px 0px 15px #FFFFFF;
+}
+
+#homepage-image-box {
+	background-color: #000000;
+    background: rgba(1, 1, 1, 0.85);
+	border: 5px solid #FFFFFF;
+	border-radius: 5px;
+	clear: both;
+	margin: 75px auto auto auto;
+	padding: 5px 5px 2px 5px;
+	width: 1000px;
+}
+
+#container {
+	background-color: #000000;
+    background: rgba(1, 1, 1, 0.85);
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 3px 33px #ffffff;
+	margin: 25px auto 25px auto;
+	padding: 0 10px;
+    width: 990px;
+}
+
+.page-contents {
+	padding: 100px 10px 10px 10px;
+	width:100%;
+}
+
+p, li {
+	padding: 10px;
+	color: white;
+	font-style: bold;
+}
+
+ul {
+	padding-left: 10px;
+}
+
+li span { 
+	position: relative; left: -10px; 
+}
+
+h2, h3 {
+	color: white;
+	font-style: bold;
+}
+
+h4 {
+	color: white;
+	font-style: bold italic;
+	padding-top: 10px;
+}
+
+#about img {
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 10px;
+	float: left;
+	clear: both;
+}
+
+legend, label {
+	color: white;
+	font-family: "Libre Baskerville", serif;
+	font-size: 16px;
+	padding: 20px;
+}
+
+optgroup option {
+	margin-left: 10px;
+}
+
+input[type="submit"], input[type="reset"] {
+	margin: 5px 5px 5px 20px;
+	padding: 5px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+	background-color: grey;
+}
+
+input[type="text"], textarea {
+    display: block;
+    margin: 5px 5px 5px 20px;
+    padding: 3px;
+}
+
+select {
+    display: block;
+    margin: 15px 5px 5px 20px;
+    padding: 3px;
+}
+
+.social-container {
+	padding: 0px;
+	margin: 0px;
+	position: fixed;
+	right: -150px;
+	top: 80px;
+	width: 200px;
+}
+
+.social li {
+	list-style-type: none;
+	background-color: #333;
+	border-radius: 8px 0 0 8px;
+	color: #efefef;
+	height: 43px;
+	padding: 0px;
+	margin: 0px 0px 2px 0px;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.social li:hover {
+	margin-left: -115px;
+}
+
+.social li img {
+	float: left;
+	margin: 5px 10px 5px 5px;
+}
+
+.social li p {
+	font-weight: bold;
+	line-height: 43px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#facebook img {
+	background-image: url("images/facebook.png");
+}
+
+#instagram img {
+	background-image: url("images/instagram.png");
+}
+
+#twitter img {
+	background-image: url("images/twitter.png");
+}
+
+#pinterest img {
+	background-image: url("images/pinterest.png");
+}
+
+#linkedin img {
+	background-image: url("images/linkedin.png");
+
+}
+
+.social li img {
+	background-position: top left;
+	border-radius: 15px;
+}
+
+.social li:hover img {
+	background-position: 0 32px;
+}
+
+.social a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+table {
+	color: #FFFFFF;
+}
+
+td {
+	padding: 0 10px 0 10px;
+}
+
+#works a {
+	color: white;
+	padding-right: 7px;
+}
+
+#select-box, #checkbox, #radio, #industry {
+	float: right;
+}
+
+#group {
+	float: left;
+}
+
+#checkbox {
+	margin-top: -215px;
+}
+
+#radio {
+	margin-top: -121px;
+	margin-right: 181;
+}
+
+#select-box {
+	margin-right: 250px;
+	margin-top: -25px;
+}
