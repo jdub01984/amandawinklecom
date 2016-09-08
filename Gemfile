@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gems for mail form
 gem 'mail_form'
 gem 'simple_form'
-
+gem 'php4r'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
